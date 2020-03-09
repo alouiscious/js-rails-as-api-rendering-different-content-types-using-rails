@@ -14,3 +14,15 @@ class BirdsController < ApplicationController
     # json: { birds: @birds, messages: ['Hello Birds', 'Goodbye Birds'] }.to_json --we dont need to_json
   end
 end
+
+
+# FETCH EXAMPLES FROM THE LAB
+# JSON
+# fetch('http://localhost:3000/birds')
+# .then(response => response.json())
+# .then(object => console.log(object))
+
+# TEXT
+# fetch('http://localhost:3000/birds')
+# .then(response => response.text())
+# .then(text => console.log(text))
