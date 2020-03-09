@@ -1,9 +1,9 @@
 class BirdsController < ApplicationController
   def index
-    birds = Bird.all # - instance variables are not used in json
+    # birds = Bird.all # - instance variables are not used in json
     # @birds = Bird.all
     # render 'birds/index.html.erb'
-    render json: { birds: @birds, messages: ['Hello Birds', 'Goodbye Birds'] }.to_json
+    # render json: { birds: @birds, messages: ['Hello Birds', 'Goodbye Birds'] }.to_json
     # json: { message: 'Hashes of data will get converted to JSON' }
     # json: 'Remember that JSON is just object notation converted to string data, so strings also work here'
     # plain: "Hello #{@birds[3].name}"
